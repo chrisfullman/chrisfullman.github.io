@@ -1,0 +1,11 @@
+backend:
+    name: github
+    repo: chrisfullman/chrisfullman.github.io
+    use_graphql: true
+media_folder: 'assets/uploads'
+collections:
+    - name: 'blog'
+    label: 'Blog'
+    folder: '_posts/'
+    fields:
+        - { name: Title }
