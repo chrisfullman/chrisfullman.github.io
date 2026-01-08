@@ -1,12 +1,12 @@
 ---
 date: 2022-12-01T00:00:00+01:00
 draft: false
-title: "Job #1"
-jobTitle: "Junior Intern"
-company: "Internet Affairs Inc. "
-location: "Stavanger, Norway"
-duration: "2022-2024"
-companyLogo: "images/experience/internet-affairs.png"
+title: "Ten (formerly AgencyNet)"
+jobTitle: "Associate Director, Technology"
+company: "Ten (formerly AgencyNet)"
+location: "Fort Lauderdale, FL"
+duration: "2004-2012"
+#companyLogo: "images/experience/internet-affairs.png"
 
 ---
 ## 1st job: Junior Intern

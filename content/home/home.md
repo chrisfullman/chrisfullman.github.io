@@ -7,14 +7,14 @@ draft = false
 
 {{< showcase-section
     title="Hi, I'm Chris"
-    subtitle="Subtitle - coming from <code>home.md</code>"
+    subtitle="I connect people <code>and make things</code>"
     buttonText="Email"
     description="<strong>Strong</strong>, <em>italic</em> and normal text. This comes from <a href='https://github.com/zetxek/adritian-demo/blob/main/content/home/home.md?plain=1'><code>home.md</code></a>, using the <code>showcase-section</code> <a href=''>shortcode</a>.<br/>Below you can see the social links, provided by the <code>platform-links</code> shortcode."
     imgSrc="images/showcase/showcase.png"
     imgScale="0.5"
  >}}
 
-{{< platform-links >}}
+<!-- {{< platform-links >}}
     {{< link icon="square-facebook" url="https://facebook.com/yourpage" >}}
     {{< link icon="square-twitter" url="https://twitter.com/yourpage" >}}
     {{< link icon="linkedin" url="https://www.linkedin.com/in/adrianmoreno/" >}}
@@ -35,7 +35,7 @@ draft = false
     {{< link icon="cloud-arrow-down" url="https://www.adrianmoreno.info/" >}}
     {{< link icon="square-xing" url="https://www.adrianmoreno.info/" >}}
 
-{{< /platform-links >}}
+{{< /platform-links >}} -->
 
 {{< /showcase-section >}}
 
@@ -51,7 +51,7 @@ draft = false
  >}}
 
 {{< education-list
-    title="Formal Education (education-list)" >}}
+    title="Education" >}}
 
 {{< experience-section
     title="My job experience (title)"
@@ -66,7 +66,7 @@ draft = false
 >}}
 
 {{< experience-list
-    title="Experience (as list)"
+    title="Experience"
     padding="false" >}}
 
 {{< client-and-work-section

@@ -18,12 +18,12 @@ draft = false
     contact_email_email="<a href='mailto:demo@demosite.com'>demo@demosite.com</a>"
     contact_address_title="My location"
     contact_address_address="🇩🇰 Denmark"
-    form_action="https://formspree.io/f/mail@example.com"
+    form_action="https://formspree.io/f/mykzrqek"
     form_method="POST"
     contact_form_rows="3"
 >}}
 
-{{< newsletter-section 
+<!-- {{< newsletter-section 
     newsletter_title="Stay updated"
     newsletter_placeholder="Enter your email"
     newsletter_button="Subscribe"
@@ -32,7 +32,7 @@ draft = false
     newsletter_note="We respect your privacy and won't share your data."
     form_action="/"
     form_method="POST"
->}}
+>}} -->
 
 
 {{< text-section

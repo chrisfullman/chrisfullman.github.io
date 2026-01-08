@@ -1,11 +1,11 @@
 ---
 date: 2024-12-01T00:00:00+01:00
 draft: false
-title: "Antimatter Co"
-jobTitle: "Owner, Chief Technical Officer"
-company: "Antimatter Co."
+title: "Job #3"
+jobTitle: "Senior Manager, Development"
+company: "Elevation Advertising"
 location: "Richmond, VA"
-duration: "2014-2021"
+duration: "2021-2025"
 
 ---
 ## 3rd job: CIO

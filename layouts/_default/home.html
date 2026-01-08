@@ -3,8 +3,8 @@
 <html lang="{{- $.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "ltr" }}"
 	{{- if .Site.Params.colorTheme.auto.disable }}
 	data-bs-theme="{{ .Site.Params.colorTheme.forced.theme }}"
-	theme-forced="true"
-	theme-auto="false"
+	theme-forced="false"
+	theme-auto="true"
 	{{- end }}>
 
 <head>

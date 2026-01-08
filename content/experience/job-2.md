@@ -2,10 +2,10 @@
 date: 2023-12-01T00:00:00+01:00
 draft: false
 title: "Job #2"
-jobTitle: "Chief Intern"
-company: "Internet Affairs Inc. "
-location: "Stavanger, Norway"
-duration: "2023-2024"
+jobTitle: "Associate Director, Technology"
+company: "The Martin Agency"
+location: "Richmond, VA"
+duration: "2012-2014"
 
 ---
 ## 2nd job: Chief Intern

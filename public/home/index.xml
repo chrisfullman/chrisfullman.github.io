@@ -11,7 +11,7 @@
  Hi, I&amp;#39;m Chris
  &lt;/h1&gt;
  &lt;h2 class="display-5"&gt;
- &lt;span&gt;Subtitle - coming from &lt;code&gt;home.md&lt;/code&gt;&lt;/span&gt;
+ &lt;span&gt;I connect people &lt;code&gt;and make things&lt;/code&gt;&lt;/span&gt;
  &lt;/h2&gt;
  &lt;div class="lead"&gt;
  &lt;strong&gt;Strong&lt;/strong&gt;, &lt;em&gt;italic&lt;/em&gt; and normal text. This comes from &lt;a href='https://github.com/zetxek/adritian-demo/blob/main/content/home/home.md?plain=1'&gt;&lt;code&gt;home.md&lt;/code&gt;&lt;/a&gt;, using the &lt;code&gt;showcase-section&lt;/code&gt; &lt;a href=''&gt;shortcode&lt;/a&gt;.&lt;br/&gt;Below you can see the social links, provided by the &lt;code&gt;platform-links&lt;/code&gt; shortcode.
@@ -65,7 +65,7 @@
  &lt;div class="col-12 inner-content"&gt;
  
 
-
+&lt;!-- 
 
 
 
@@ -266,7 +266,7 @@
 &lt;/div&gt;
  &lt;/div&gt;
 &lt;/div&gt;
-
+ --&gt;
 
 
  &lt;/div&gt;
@@ -365,22 +365,22 @@
  &lt;div class="container-education"&gt;
  &lt;div class="row rad-fade-down"&gt;
  &lt;div class="col-12"&gt;
- &lt;h2&gt;Formal Education (education-list)&lt;/h2&gt;
+ &lt;h2&gt;Education&lt;/h2&gt;
  &lt;div class="row pt-2 pt-md-4"&gt;
  
  &lt;div class="col-12 col-sm-6 mb-4 mb-sm-0"&gt;
  &lt;div class="education"&gt;
- &lt;div class="education__date"&gt;2009-2012&lt;/div&gt;
- &lt;div class="education__title"&gt;High School of Hard Knocks&lt;/div&gt;
- &lt;div class="education__degree"&gt;High School Diploma, Sciences, Math, Computer &amp;amp; Business Studies&lt;/div&gt;
+ &lt;div class="education__date"&gt;2001-2004&lt;/div&gt;
+ &lt;div class="education__title"&gt;The Art Institutes of Fort Lauderdale&lt;/div&gt;
+ &lt;div class="education__degree"&gt;Bachelor of Science, Interactive Media Authoring&lt;/div&gt;
  &lt;/div&gt;
  &lt;/div&gt;
  
  &lt;div class="col-12 col-sm-6 mb-4 mb-sm-0"&gt;
  &lt;div class="education"&gt;
- &lt;div class="education__date"&gt;2012-2017&lt;/div&gt;
- &lt;div class="education__title"&gt;University of Life&lt;/div&gt;
- &lt;div class="education__degree"&gt;Bachelor of Applied Science (BASc), Electrical Engineering&lt;/div&gt;
+ &lt;div class="education__date"&gt;Class of 2019&lt;/div&gt;
+ &lt;div class="education__title"&gt;Leadership Metro Richmond&lt;/div&gt;
+ &lt;div class="education__degree"&gt;Leadership Quest&lt;/div&gt;
  &lt;/div&gt;
  &lt;/div&gt;
  
@@ -428,11 +428,36 @@
  
  
  &lt;div class="experience__meta"&gt;
- &lt;div class="experience__date"&gt;2024-now&lt;/div&gt;
- &lt;div class="experience__title"&gt;CIO&lt;/div&gt;
+ &lt;div class="experience__date"&gt;2014-2021&lt;/div&gt;
+ &lt;div class="experience__title"&gt;Owner, Chief Technical Officer&lt;/div&gt;
  &lt;div class="experience__company"&gt;
- Internet Affairs Inc. .
- &lt;span class="experience__location"&gt;Stavanger, Norway&lt;/span&gt;
+ Antimatter Co..
+ &lt;span class="experience__location"&gt;Richmond, VA&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="experience__description d-none d-print-block"&gt;
+ &lt;h1&gt;Antimatter Co&lt;/h1&gt;
+ 3rd job: CIO As Chief Information Officer at Internet Affairs Inc., I lead the strategic transformation of our digital infrastructure and cybersecurity initiatives. My team of 150+ IT professionals works tirelessly to protect and optimize our global network spanning 23 countries.
+During my tenure, I&amp;rsquo;ve spearheaded the implementation of a revolutionary blockchain-based verification system that reduced fraudulent transactions by 87% while improving processing speeds by 300%. This initiative saved the company $12M annually and earned us the prestigious &amp;ldquo;Digital Innovation Award 2024&amp;rdquo;.
+I&amp;rsquo;m particularly proud of our &amp;ldquo;Green Computing&amp;rdquo; program which has successfully migrated 75% of our data centers to renewable energy sources. This environmental initiative not only reduced our carbon footprint by 45% but also resulted in a 30% reduction in operational costs.
+In my role, I also serve as a member of the executive board, helping shape the company&amp;rsquo;s long-term technology vision and ensuring our IT strategy aligns perfectly with our business objectives. Currently leading an ambitious AI integration project that promises to revolutionize our customer service capabilities.
+
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="experience"&gt;
+ &lt;a href="http://localhost:1313/experience/job-4/" class="experience__link"&gt;
+ &lt;div class="experience__header"&gt;
+ 
+ 
+ &lt;div class="experience__meta"&gt;
+ &lt;div class="experience__date"&gt;2021-2025&lt;/div&gt;
+ &lt;div class="experience__title"&gt;Senior Manager, Development&lt;/div&gt;
+ &lt;div class="experience__company"&gt;
+ Elevation Advertising.
+ &lt;span class="experience__location"&gt;Richmond, VA&lt;/span&gt;
  &lt;/div&gt;
  &lt;/div&gt;
  &lt;div class="experience__description d-none d-print-block"&gt;
@@ -448,38 +473,16 @@ In my role, I also serve as a member of the executive board, helping shape the c
  &lt;/div&gt;
  
  &lt;div class="experience"&gt;
- &lt;a href="http://localhost:1313/experience/job-3.es-copy/" class="experience__link"&gt;
- &lt;div class="experience__header"&gt;
- 
- 
- &lt;div class="experience__meta"&gt;
- &lt;div class="experience__date"&gt;2024-ahora&lt;/div&gt;
- &lt;div class="experience__title"&gt;Director Ejecutivo&lt;/div&gt;
- &lt;div class="experience__company"&gt;
- Internet Affairs Inc..
- &lt;span class="experience__location"&gt;Stavanger, Noruega&lt;/span&gt;
- &lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="experience__description d-none d-print-block"&gt;
- &lt;h1&gt;Trabajo #3&lt;/h1&gt;
- Arreglando el mundo, un byte a la vez ¡Adquisición hostil - ¿quién es el jefe ahora?!
-
- &lt;/div&gt;
- &lt;/div&gt;
- &lt;/a&gt;
- &lt;/div&gt;
- 
- &lt;div class="experience"&gt;
  &lt;a href="http://localhost:1313/experience/job-2/" class="experience__link"&gt;
  &lt;div class="experience__header"&gt;
  
  
  &lt;div class="experience__meta"&gt;
- &lt;div class="experience__date"&gt;2023-2024&lt;/div&gt;
- &lt;div class="experience__title"&gt;Chief Intern&lt;/div&gt;
+ &lt;div class="experience__date"&gt;2012-2014&lt;/div&gt;
+ &lt;div class="experience__title"&gt;Associate Director, Technology&lt;/div&gt;
  &lt;div class="experience__company"&gt;
- Internet Affairs Inc. .
- &lt;span class="experience__location"&gt;Stavanger, Norway&lt;/span&gt;
+ The Martin Agency.
+ &lt;span class="experience__location"&gt;Richmond, VA&lt;/span&gt;
  &lt;/div&gt;
  &lt;/div&gt;
  &lt;div class="experience__description d-none d-print-block"&gt;
@@ -498,24 +501,16 @@ My most significant achievement was the successful implementation of a machine l
  &lt;div class="experience__header"&gt;
  
  
- 
- &lt;img 
- src="http://localhost:1313/images/experience/internet-affairs_hu_32efa99081a310f9.webp" 
- alt=" logo"
- class="experience__company-logo"
- loading="lazy"
- /&gt;
- 
  &lt;div class="experience__meta"&gt;
- &lt;div class="experience__date"&gt;2022-2024&lt;/div&gt;
- &lt;div class="experience__title"&gt;Junior Intern&lt;/div&gt;
+ &lt;div class="experience__date"&gt;2004-2012&lt;/div&gt;
+ &lt;div class="experience__title"&gt;Associate Director, Technology&lt;/div&gt;
  &lt;div class="experience__company"&gt;
- Internet Affairs Inc. .
- &lt;span class="experience__location"&gt;Stavanger, Norway&lt;/span&gt;
+ Ten (formerly AgencyNet).
+ &lt;span class="experience__location"&gt;Fort Lauderdale, FL&lt;/span&gt;
  &lt;/div&gt;
  &lt;/div&gt;
  &lt;div class="experience__description d-none d-print-block"&gt;
- &lt;h1&gt;Job #1&lt;/h1&gt;
+ &lt;h1&gt;Ten (formerly AgencyNet)&lt;/h1&gt;
  1st job: Junior Intern The beginning of a great career. As a Junior Intern at Internet Affairs Inc., I had the opportunity to work on various projects that helped me develop my technical and professional skills. Working alongside experienced developers, I contributed to the company&amp;rsquo;s core web applications and learned industry best practices in software development.
 During my internship, I took the initiative to create an internal documentation wiki that improved knowledge sharing across teams. This project taught me valuable lessons in technical writing and collaboration. I also participated in code reviews and daily stand-ups, gaining firsthand experience in agile development methodologies.
 My most notable achievement was developing an automated testing script that reduced QA time by 25%. This project not only improved team efficiency but also demonstrated my ability to identify problems and implement effective solutions. Additionally, I actively participated in the company&amp;rsquo;s mentorship program, where I helped onboard new interns and shared my growing knowledge with peers.
@@ -609,7 +604,7 @@ Through these experiences, I built a strong foundation in software development a
  &lt;div class="row flex-column-reverse flex-md-row rad-fade-down"&gt;
  &lt;div class="experience-list col-12 mt-5 mt-sm-0"&gt;
  
- &lt;h2 class="section__title mb-4"&gt;Experience (as list)&lt;/h2&gt;
+ &lt;h2 class="section__title mb-4"&gt;Experience&lt;/h2&gt;
  
  
  
@@ -622,13 +617,13 @@ Through these experiences, I built a strong foundation in software development a
  
  
  &lt;div class="experience__meta"&gt;
- &lt;div class="experience__date"&gt;2024-now&lt;/div&gt;
- &lt;div class="experience__title"&gt;CIO&lt;/div&gt;
- &lt;div class="experience__company"&gt;Internet Affairs Inc. . &lt;span class="experience__location"&gt;
- Stavanger, Norway&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="experience__date"&gt;2014-2021&lt;/div&gt;
+ &lt;div class="experience__title"&gt;Owner, Chief Technical Officer&lt;/div&gt;
+ &lt;div class="experience__company"&gt;Antimatter Co.. &lt;span class="experience__location"&gt;
+ Richmond, VA&lt;/span&gt;&lt;/div&gt;
  &lt;/div&gt;
  &lt;/div&gt;
  &lt;div class="experience__description d-print-block col-12 col-md-9 mt-3 mt-md-0"&gt;
- &lt;h1&gt;Job #3&lt;/h1&gt;
+ &lt;h1&gt;Antimatter Co&lt;/h1&gt;
  &lt;h2 id="3rd-job-cio"&gt;3rd job: CIO&lt;/h2&gt;
 &lt;p&gt;As Chief Information Officer at Internet Affairs Inc., I lead the strategic transformation of our digital infrastructure and cybersecurity initiatives. My team of 150+ IT professionals works tirelessly to protect and optimize our global network spanning 23 countries.&lt;/p&gt;</description></item></channel></rss>
