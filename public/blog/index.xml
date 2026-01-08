@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Demo Blog on</title><link>http://localhost:1313/blog/</link><description>Recent content in Demo Blog on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 28 Feb 2025 08:05:05 +0100</lastBuildDate><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Create your own version of the site</title><link>http://localhost:1313/blog/getting-started/</link><pubDate>Tue, 11 Feb 2025 14:38:33 +0200</pubDate><guid>http://localhost:1313/blog/getting-started/</guid><description>&lt;p&gt;This article is a guide to help you create your own version of the site using &lt;a href="https://github.com/zetxek/adritian-free-hugo-theme"&gt;Adritian&lt;/a&gt;. It will cover the main steps to get started with the theme, and how to customize it to your needs.&lt;/p&gt;
+&lt;h3 id="creating-a-site"&gt;Creating a site&lt;/h3&gt;
+&lt;p&gt;This theme is for the content management system &lt;a href="https://gohugo.io/"&gt;Hugo&lt;/a&gt;, so that will be a pre-requirement.
+Make sure that you install the &lt;code&gt;extended&lt;/code&gt; version of Hugo, as the theme uses SCSS for styling, as well as image optimization.&lt;/p&gt;</description></item><item><title>How to Add Custom Icons to the Adritian Theme</title><link>http://localhost:1313/blog/new-icons/</link><pubDate>Fri, 28 Feb 2025 08:05:05 +0100</pubDate><guid>http://localhost:1313/blog/new-icons/</guid><description>&lt;h1 id="how-to-add-custom-icons-to-the-adritian-theme"&gt;How to Add Custom Icons to the Adritian Theme&lt;/h1&gt;
+
+
+
+
+
+&lt;div class="table-of-contents"&gt;
+ 
+ &lt;h2 class="toc-heading"&gt;Table of Contents&lt;/h2&gt;
+ 
+ &lt;div class="toc-content"&gt;
+ &lt;nav id="TableOfContents"&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#overview"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#step-1-export-current-configuration"&gt;Step 1: Export Current Configuration&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#step-2-import-configuration-to-fontello"&gt;Step 2: Import Configuration to Fontello&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#step-3-add-new-icons"&gt;Step 3: Add New Icons&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#step-4-download-updated-font"&gt;Step 4: Download Updated Font&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#step-5-option-1-update-theme-files-manually"&gt;Step 5 (option 1): Update Theme Files Manually&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#step-5-option-2-update-theme-files-with-npm-script"&gt;Step 5 (option 2): Update Theme Files with npm script&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#step-6-using-the-new-icon"&gt;Step 6: Using the New Icon&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#example-usage"&gt;Example Usage&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#troubleshooting"&gt;Troubleshooting&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#icons-not-displaying"&gt;Icons Not Displaying&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#icons-show-as-squares"&gt;Icons Show as Squares&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#build-errors"&gt;Build Errors&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;&lt;a href="#best-practices"&gt;Best Practices&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#additional-resources"&gt;Additional Resources&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+ 
+&lt;p&gt;This guide will walk you through adding custom icons to your Adritian Hugo theme. Whether you need new social media icons, brand logos, or custom symbols, follow these steps to integrate them seamlessly.&lt;/p&gt;</description></item><item><title>Icons</title><link>http://localhost:1313/blog/icons/</link><pubDate>Fri, 28 Feb 2025 08:05:05 +0100</pubDate><guid>http://localhost:1313/blog/icons/</guid><description>&lt;p&gt;The theme has multiple icons available for use.&lt;/p&gt;
+&lt;p&gt;You can see them rendered here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="threads"
+ &gt;&lt;i class="icon-threads"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;threads&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="bluesky"
+ &gt;&lt;i class="icon-bluesky"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;bluesky&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="x-twitter"
+ &gt;&lt;i class="icon-x-twitter"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;x-twitter&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="email"
+ &gt;&lt;i class="icon-email"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;email&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="user"
+ &gt;&lt;i class="icon-user"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;user&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="table-list"
+ &gt;&lt;i class="icon-table-list"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;table-list&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="download"
+ &gt;&lt;i class="icon-download"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;download&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="circle-info"
+ &gt;&lt;i class="icon-circle-info"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;circle-info&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="square-twitter"
+ &gt;&lt;i class="icon-square-twitter"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;square-twitter&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="square-facebook"
+ &gt;&lt;i class="icon-square-facebook"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;square-facebook&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="linkedin"
+ &gt;&lt;i class="icon-linkedin"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;linkedin&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="square-github"
+ &gt;&lt;i class="icon-square-github"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;square-github&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="circle-arrow-left"
+ &gt;&lt;i class="icon-circle-arrow-left"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;circle-arrow-left&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="circle-arrow-right"
+ &gt;&lt;i class="icon-circle-arrow-right"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;circle-arrow-right&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="circle-arrow-up"
+ &gt;&lt;i class="icon-circle-arrow-up"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;circle-arrow-up&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="circle-arrow-down"
+ &gt;&lt;i class="icon-circle-arrow-down"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;circle-arrow-down&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="quote-left"
+ &gt;&lt;i class="icon-quote-left"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;quote-left&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="face-smile"
+ &gt;&lt;i class="icon-face-smile"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;face-smile&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="square-arrow-up-right"
+ &gt;&lt;i class="icon-square-arrow-up-right"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;square-arrow-up-right&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="youtube"
+ &gt;&lt;i class="icon-youtube"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;youtube&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="square-xing"
+ &gt;&lt;i class="icon-square-xing"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;square-xing&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="instagram"
+ &gt;&lt;i class="icon-instagram"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;instagram&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="dribbble"
+ &gt;&lt;i class="icon-dribbble"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;dribbble&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="behance"
+ &gt;&lt;i class="icon-behance"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;behance&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="file-pdf"
+ &gt;&lt;i class="icon-file-pdf"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;file-pdf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="codepen"
+ &gt;&lt;i class="icon-codepen"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;codepen&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="yelp"
+ &gt;&lt;i class="icon-yelp"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;yelp&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="cloud-arrow-down"
+ &gt;&lt;i class="icon-cloud-arrow-down"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;cloud-arrow-down&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="medium"
+ &gt;&lt;i class="icon-medium"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;medium&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="stack-overflow"
+ &gt;&lt;i class="icon-stack-overflow"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;stack-overflow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="meetup"
+ &gt;&lt;i class="icon-meetup"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;meetup&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="tiktok"
+ &gt;&lt;i class="icon-tiktok"&gt;&lt;/i&gt;
+&lt;/a&gt;
+ &lt;code&gt;tiktok&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can use them in several ways.&lt;/p&gt;</description></item><item><title>Theme shortcodes</title><link>http://localhost:1313/blog/shortcodes/</link><pubDate>Fri, 14 Feb 2025 14:38:33 +0200</pubDate><guid>http://localhost:1313/blog/shortcodes/</guid><description>&lt;p&gt;Shortcodes are a convenient &lt;a href="https://gohugo.io/content-management/shortcodes/"&gt;functionality of Hugo&lt;/a&gt;, allowing you to embed templates or layouts within other content.&lt;/p&gt;
+&lt;p&gt;Some of the example built-in shortcodes are Instagram posts, YouTube videos, QR codes, etc. You can find &lt;a href="https://gohugo.io/content-management/shortcodes/#embedded"&gt;the full list in the official docs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The theme provides custom shortcodes to allow you to customize your landing page as you want:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;toc&lt;/code&gt;: Generates a styled table of contents from page headings.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;education-list&lt;/code&gt;: Displays a list of educational qualifications.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;experience-list&lt;/code&gt;: Shows a list of professional experiences.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;platform-links&lt;/code&gt;: Embeds links to various platforms with icons.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;newsletter-section&lt;/code&gt;: Adds a section for newsletter subscription.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;link&lt;/code&gt;: Creates a hyperlink with an icon.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;experience-section&lt;/code&gt;: Inserts a detailed experience section.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;contact-section&lt;/code&gt;: Adds a contact information section, with a customizable form and information.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;client-and-work-section&lt;/code&gt;: Displays a section for clients and work.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;about-section&lt;/code&gt;: About section, with image, buttons for call to action and image.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;testimonial-section&lt;/code&gt;: Adds references from customers, colleagues, etc.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;showcase&lt;/code&gt;: two-column block with a full-width image to the left, and a text snippet to the right. Great for a call to action or introduction of the person (assuming it&amp;rsquo;s a personal website).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;text-section&lt;/code&gt;: utility shortcode used to render text in some parts of the theme where it would otherwise be full-width, appearing &amp;ldquo;too floaty&amp;rdquo;. See &lt;a href="https://github.com/zetxek/adritian-free-hugo-theme/issues/260"&gt;the github issue #260 for context&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;spacer&lt;/code&gt;: Adds vertical spacing before the next element.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The shortcodes can be customized with different arguments:&lt;/p&gt;</description></item><item><title>Other installation methods</title><link>http://localhost:1313/blog/other-installation-methods/</link><pubDate>Tue, 11 Feb 2025 14:38:33 +0200</pubDate><guid>http://localhost:1313/blog/other-installation-methods/</guid><description>&lt;p&gt;This is a guide that extends the default instructions offered in &lt;a href="https://github.com/zetxek/adritian-free-hugo-theme/blob/main/README.md"&gt;the theme readme&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id="manual-configuration"&gt;Manual configuration&lt;/h3&gt;
+&lt;p&gt;If you prefer to manually set your site, you need to replace the contents of your config file (&lt;code&gt;hugo.toml&lt;/code&gt;) file by these:&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;hugo.toml configuration&lt;/summary&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;baseURL = &amp;#34;&amp;lt;your website url&amp;gt;&amp;#34;
+languageCode = &amp;#34;en&amp;#34;
+
+[module]
+[module.hugoVersion]
+# We use hugo.Deps to list dependencies, which was added in Hugo 0.92.0
+min = &amp;#34;0.92.0&amp;#34;
+
+[[module.imports]]
+path=&amp;#34;github.com/zetxek/adritian-free-hugo-theme&amp;#34;
+
+## Base mounts - so your site&amp;#39;s assets are available
+ [[module.mounts]]
+ source = &amp;#34;archetypes&amp;#34;
+ target = &amp;#34;archetypes&amp;#34;
+
+ [[module.mounts]]
+ source = &amp;#34;assets&amp;#34;
+ target = &amp;#34;assets&amp;#34;
+
+ [[module.mounts]]
+ source = &amp;#34;i18n&amp;#34;
+ target = &amp;#34;i18n&amp;#34;
+
+ [[module.mounts]]
+ source = &amp;#34;layouts&amp;#34; 
+ target = &amp;#34;layouts&amp;#34;
+
+ [[module.mounts]]
+ source = &amp;#34;static&amp;#34;
+ target = &amp;#34;static&amp;#34;
+
+# The following mounts are required for the theme to be able to load bootstrap
+# Remember also to copy the theme&amp;#39;s `package.json` to your site, and run `npm install`
+[[module.mounts]]
+ source = &amp;#34;node_modules/bootstrap/scss&amp;#34;
+ target = &amp;#34;assets/scss/bootstrap&amp;#34;
+
+[[module.mounts]]
+ source = &amp;#34;node_modules/bootstrap/dist/js&amp;#34;
+ target = &amp;#34;assets/js/bootstrap&amp;#34;
+
+[[module.mounts]]
+ source = &amp;#34;node_modules/bootstrap/dist/js/bootstrap.bundle.min.js&amp;#34;
+ target = &amp;#34;assets/js/vendor/bootstrap.bundle.min.js&amp;#34;
+
+## Optional, if you want print improvements (to PDF/printed)
+[[module.mounts]]
+source = &amp;#34;node_modules/bootstrap-print-css/css/bootstrap-print.css&amp;#34;
+target = &amp;#34;assets/css/bootstrap-print.css&amp;#34;
+
+[params]
+
+ title = &amp;#39;Your website title&amp;#39;
+ description = &amp;#39;Your website description&amp;#39;
+ sections = [&amp;#34;showcase&amp;#34;, &amp;#34;about&amp;#34;, &amp;#34;education&amp;#34;, &amp;#34;experience&amp;#34;, &amp;#34;client-and-work&amp;#34;, &amp;#34;testimonial&amp;#34;, &amp;#34;contact&amp;#34;, &amp;#34;newsletter&amp;#34;]
+
+ # If you want to display an image logo in the header, you can add it here
+ # logo = &amp;#39;/img/hugo.svg&amp;#39;
+ homepageExperienceCount = 6
+
+ [params.analytics]
+ ## Analytics parameters.
+ ### Supported so far: Vercel (Page Insights, Analytics)
+ ### And Google (Tag Manager, Analytics)
+
+ # controls vercel page insights - disabled by default
+ # to enable, just set to true
+ vercelPageInsights = false
+ vercelAnalytics = false
+ 
+ # google analytics and tag manager. to enable, set &amp;#34;enabled&amp;#34; to true
+ # and add the tracking code (UA-something for analytics, GTM-something for tag manager)
+ [params.analytics.googleAnalytics]
+ code = &amp;#34;UA-XXXXX-Y&amp;#34;
+ enabled = false
+ [params.analytics.googleTagManager]
+ code = &amp;#34;GTM-XXXXX&amp;#34;
+ enabled = false
+
+[build]
+ [build.buildStats]
+ disableClasses = false
+ disableIDs = false
+ disableTags = false
+ enable = true
+
+[params.languages.selector.disable]
+ footer = false
+
+[languages]
+ [languages.en]
+ disabled = false
+ languageCode = &amp;#39;en&amp;#39;
+ languageDirection = &amp;#39;ltr&amp;#39;
+ languageName = &amp;#39;English&amp;#39;
+ title = &amp;#39;&amp;#39;
+ weight = 0
+
+ [languages.en.menus]
+ [[languages.en.menus.header]]
+ name = &amp;#39;About&amp;#39;
+ URL = &amp;#39;#about&amp;#39;
+ weight = 2
+ [[languages.en.menus.header]]
+ name = &amp;#39;Portfolio&amp;#39;
+ URL = &amp;#39;#portfolio&amp;#39;
+ weight = 3
+ # [[languages.en.menus.header]]
+ # name = &amp;#34;Experience&amp;#34;
+ # URL = &amp;#34;#experience&amp;#34;
+ # weight = 4
+
+ [[languages.en.menus.header]]
+ name = &amp;#34;Blog&amp;#34;
+ URL = &amp;#34;/blog&amp;#34;
+ weight = 5
+
+ [[languages.en.menus.header]]
+ name = &amp;#34;Contact&amp;#34;
+ URL = &amp;#34;#contact&amp;#34;
+ weight = 6
+
+ [[languages.en.menus.footer]]
+ name = &amp;#34;About&amp;#34;
+ URL = &amp;#34;#about&amp;#34;
+ weight = 2
+
+ [[languages.en.menus.footer]]
+ name = &amp;#34;Portfolio&amp;#34;
+ URL = &amp;#34;#portfolio&amp;#34;
+ weight = 3
+
+ [[languages.en.menus.footer]]
+ name = &amp;#34;Contact&amp;#34;
+ URL = &amp;#34;#contact&amp;#34;
+ weight = 4
+
+
+ [languages.es]
+ disabled = false
+ languageCode = &amp;#39;es&amp;#39;
+ languageDirection = &amp;#39;ltr&amp;#39;
+ languageName = &amp;#39;Español&amp;#39;
+ title = &amp;#39;&amp;#39;
+ weight = 0
+ [[languages.es.menus.header]]
+ name = &amp;#39;Sobre mi&amp;#39;
+ URL = &amp;#39;/es/#about&amp;#39;
+ weight = 2
+ [[languages.es.menus.header]]
+ name = &amp;#39;Portfolio&amp;#39;
+ URL = &amp;#39;/es/#portfolio&amp;#39;
+ weight = 3
+
+ # [[languages.es.menus.header]]
+ # name = &amp;#34;Experiencia&amp;#34;
+ # URL = &amp;#34;/es/#experience&amp;#34;
+ # weight = 4
+
+ [[languages.es.menus.header]]
+ name = &amp;#34;Blog&amp;#34;
+ URL = &amp;#34;/es/blog&amp;#34;
+ weight = 5
+
+ [[languages.es.menus.header]]
+ name = &amp;#34;Contacto&amp;#34;
+ URL = &amp;#34;/es/#contact&amp;#34;
+ weight = 6
+
+ [[languages.es.menus.footer]]
+ name = &amp;#34;Sobre mi&amp;#34;
+ URL = &amp;#34;/es/#about&amp;#34;
+ weight = 2
+
+ [[languages.es.menus.footer]]
+ name = &amp;#34;Portfolio&amp;#34;
+ URL = &amp;#34;/es/#portfolio&amp;#34;
+ weight = 3
+
+ [[languages.es.menus.footer]]
+ name = &amp;#34;Contact&amp;#34;
+ URL = &amp;#34;/es/#contact&amp;#34;
+ weight = 4
+
+ [languages.fr]
+ disabled = false
+ languageCode = &amp;#39;fr&amp;#39;
+ languageDirection = &amp;#39;ltr&amp;#39;
+ languageName = &amp;#39;Français&amp;#39;
+ title = &amp;#39;&amp;#39;
+ weight = 0
+
+ [languages.fr.menus]
+ [[languages.fr.menus.header]]
+ name = &amp;#39;About&amp;#39;
+ URL = &amp;#39;#about&amp;#39;
+ weight = 2
+ [[languages.fr.menus.header]]
+ name = &amp;#39;Portfolio&amp;#39;
+ URL = &amp;#39;#portfolio&amp;#39;
+ weight = 3
+ # [[languages.fr.menus.header]]
+ # name = &amp;#34;Experience&amp;#34;
+ # URL = &amp;#34;#experience&amp;#34;
+ # weight = 4
+
+ [[languages.fr.menus.header]]
+ name = &amp;#34;Blog&amp;#34;
+ URL = &amp;#34;/blog&amp;#34;
+ weight = 5
+
+ [[languages.fr.menus.header]]
+ name = &amp;#34;Contact&amp;#34;
+ URL = &amp;#34;#contact&amp;#34;
+ weight = 6
+
+ [[languages.fr.menus.footer]]
+ name = &amp;#34;About&amp;#34;
+ URL = &amp;#34;#about&amp;#34;
+ weight = 2
+
+ [[languages.fr.menus.footer]]
+ name = &amp;#34;Portfolio&amp;#34;
+ URL = &amp;#34;#portfolio&amp;#34;
+ weight = 3
+
+ [[languages.fr.menus.footer]]
+ name = &amp;#34;Contact&amp;#34;
+ URL = &amp;#34;#contact&amp;#34;
+ weight = 4
+
+# Plugins
+[params.plugins]
+
+ # CSS Plugins
+ [[params.plugins.css]]
+ URL = &amp;#34;css/custom.css&amp;#34;
+ [[params.plugins.css]]
+ URL = &amp;#34;css/adritian-icons.css&amp;#34;
+ ## Optional, if you want print improvements (to PDF/printed)
+ [[params.plugins.css]]
+ URL = &amp;#34;css/bootstrap-print.css&amp;#34;
+ 
+ # JS Plugins
+ [[params.plugins.js]]
+ URL = &amp;#34;js/rad-animations.js&amp;#34;
+ [[params.plugins.js]]
+ URL = &amp;#34;js/sticky-header.js&amp;#34;
+ [[params.plugins.js]]
+ URL = &amp;#34;js/library/fontfaceobserver.js&amp;#34;
+
+ # SCSS Plugins
+ [[params.plugins.scss]]
+ URL = &amp;#34;scss/adritian.scss&amp;#34;
+
+
+# theme/color style 
+[params.colorTheme]
+
+## the following configuration would disable automatic theme selection
+# [params.colorTheme.auto]
+# disable = true
+# [params.colorTheme.forced]
+# theme = &amp;#34;dark&amp;#34;
+
+## the following parameter will disable theme override in the footer
+# [params.colorTheme.selector.disable]
+# footer = true
+
+
+## by default we allow override AND automatic selection
+
+[params.blog]
+layout = &amp;#34;default&amp;#34; # options: default, sidebar
+sidebarWidth = &amp;#34;25&amp;#34; # percentage width of the sidebar
+showCategories = true
+showRecentPosts = true
+recentPostCount = 5
+listStyle = &amp;#34;summary&amp;#34; # options: simple, summary
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;Get the module: &lt;code&gt;hugo mod get -u&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Execute &lt;code&gt;hugo mod npm pack&lt;/code&gt; - this will generate a &lt;code&gt;package.json&lt;/code&gt; file in the root folder of your site, with the dependencies for the theme.&lt;/li&gt;
+&lt;li&gt;Execute &lt;code&gt;npm install&lt;/code&gt; - this will install the dependencies for the theme (including bootstrap)&lt;/li&gt;
+&lt;li&gt;(Optional, to override the defaults) Create a file &lt;code&gt;data/homepage.yml&lt;/code&gt; with the contents of the &lt;a href="https://github.com/zetxek/adritian-free-hugo-theme/blob/main/exampleSite/data/homepage.yml"&gt;&lt;code&gt;exampleSite/data/homepage.yml&lt;/code&gt;&lt;/a&gt; file, and customize to your needs (&lt;strong&gt;note: this file is not included in your theme if you use hugo modules, download it manually from the repository&lt;/strong&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;
+&lt;h3 id="traditional-installation-as-git-submodule"&gt;Traditional Installation (as git submodule)&lt;/h3&gt;
+&lt;p&gt;If you prefer not to use Hugo Modules, you can still install the theme as a git submodule.
+The guide is very similar to &lt;a href="https://gohugo.io/getting-started/quick-start/#create-a-site"&gt;official &amp;ldquo;Quick Start&amp;rdquo;&lt;/a&gt;, just changing the theme URL in the &lt;code&gt;git submodule add&lt;/code&gt; command:&lt;/p&gt;</description></item><item><title>Sample content: featured image</title><link>http://localhost:1313/blog/sample-3/</link><pubDate>Mon, 24 Jun 2024 14:38:33 +0200</pubDate><guid>http://localhost:1313/blog/sample-3/</guid><description>&lt;p&gt;Sample blog content. Like a lorem ipsum but saying something more interesting.&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/img/blog/feature-sample-3.png" alt="Example image"&gt;&lt;/p&gt;
+&lt;p&gt;Welcome to the world of &amp;ldquo;Content Ipsum,&amp;rdquo; the fresh alternative to the classic lorem ipsum. It&amp;rsquo;s the perfect blend for designers and writers who crave a dash of creativity and meaning in their placeholder text. Imagine a text that not only fills the space but also sparks the imagination, a text that weaves tales of innovation, inspiration, and the endless possibilities that creativity brings.&lt;/p&gt;</description></item><item><title>Sample content: formatting styles</title><link>http://localhost:1313/blog/sample/</link><pubDate>Fri, 21 Jun 2024 14:38:33 +0200</pubDate><guid>http://localhost:1313/blog/sample/</guid><description>&lt;p&gt;Sample blog content. Like a lorem ipsum but saying something more interesting.&lt;/p&gt;
+&lt;p&gt;We will show some content that is supported:&lt;/p&gt;
+&lt;h2 id="basic-syntax"&gt;Basic Syntax&lt;/h2&gt;
+&lt;h3 id="headings"&gt;Headings&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="heading-2"&gt;Heading 2&lt;/h2&gt;
+&lt;h3 id="heading-3"&gt;Heading 3&lt;/h3&gt;
+&lt;h4 id="heading-4"&gt;Heading 4&lt;/h4&gt;
+&lt;h5 id="heading-5"&gt;Heading 5&lt;/h5&gt;
+&lt;h6 id="heading-6"&gt;Heading 6&lt;/h6&gt;
+&lt;h3 id="emphasis"&gt;Emphasis&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;*This text will be italic*
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;_This will also be italic_
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;**This text will be bold**
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;__This will also be bold__
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;_You **can** combine them_
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;This text will be italic&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>

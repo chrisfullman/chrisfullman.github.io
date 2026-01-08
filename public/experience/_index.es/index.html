@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="theme-color" content="#478079" />
+
+
+<title>
+  
+    Experiencia |
+  
+  Demo site for Adritian - a high performance hugo theme by Adrián Moreno
+</title>
+
+<meta name="description" content="This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications." />
+<meta name="generator-mode" content="development" />
+<style data-generator="critical-css">
+</style>
+
+
+
+  
+  <script>
+    
+    (function() {
+      const storedTheme = localStorage.getItem('theme');
+      if (storedTheme) {
+        if (storedTheme === 'auto') {
+          const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.setAttribute('data-bs-theme', isDark ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme-auto', 'true');
+        } else {
+          document.documentElement.setAttribute('data-bs-theme', storedTheme);
+        }
+      } else {
+        const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-bs-theme', isDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme-auto', 'true');
+      }
+    })();
+  </script>
+  <script defer src="/js/color-modes.js"></script>
+  
+
+<link rel="preload" href="http://localhost:1313/js/library/lozad.min.js" as="script">
+<script async src="http://localhost:1313/js/library/lozad.min.js"></script>
+
+<meta property="og:url" content="http://localhost:1313/experience/_index.es/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="Experiencia">
+  <meta property="og:description" content="Aquí es donde puedes destacar un poco sobre tu experiencia. Años de experiencia total, especialización, etc.
+El contenido en esta introducción viene del archivo content/experience/_index.md. Este tipo de contenido, las “páginas índice”, se denominan “branch bundles” (paquetes de rama). Puede leer más sobre secciones y paquetes en la documentación de Hugo.
+El contenido para cada elemento de experiencia (en los que puedes hacer clic a la izquierda) se define en la carpeta content/experience, con un elemento de contenido por experiencia, como en job-1.es.md, job-2.es.md, etc.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="experience">
+
+
+    
+
+</head>
+
+<body class=" page-_index.es">
+    
+
+
+<a href="#main-content" 
+    class="skip-to-content-link"
+    aria-label='Skip to main content'>
+  Skip to main content
+</a>
+
+<header class="header fixed-top rad-animation-group" id="header">
+  <div class="container rad-fade-in">
+    <nav class="navbar bd-navbar navbar-expand-lg navbar-light p-0">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-auto" href="/">
+            
+          <span>Adritian</span>
+          <span>Demo</span>
+        </a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent, #header"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label='Toggle navigation'
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-lg-auto">
+            <li class="dropdown theme-selector nav-item">
+              
+                
+              
+<div id='header-color-selector'
+  class='d-grid gap-2 col-6 mx-auto nav-link dropdown  '>
+  <button class="btn btn-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center show bd-theme-selector"
+    id='bd-theme-header' type="button" aria-expanded="true" data-bs-toggle="dropdown"
+    data-bs-display="static" aria-label='Toggle theme'>
+    <span class="theme-icon auto d-none" aria-hidden="true"></span>
+    <span class="current-theme">✨ Auto</span>
+    <span class="d-lg-none ms-2 visually-hidden bd-theme-text" id="bd-theme-text-header">Toggle theme</span>
+  </button>
+  <ul id="theme-dropdown-header" class="dropdown-menu dropdown-menu-end " aria-labelledby="bd-theme-text-header" data-bs-popper="static">
+    <li>
+      <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light"
+        aria-pressed="true">
+        ☀️ Light
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+        aria-pressed="false">
+        🌑 Dark
+        <span class="theme-icon dark d-none" aria-hidden="true"></span>
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto"
+        aria-pressed="false">
+        ✨ Auto
+        <span class="theme-icon light d-none" aria-hidden="true"></span>
+      </button>
+    </li>
+  </ul>
+</div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+</header> 
+  <section id="breadcrumb-bar" class="breadcrumb-bar container">
+    <nav aria-label="breadcrumb" class="d-print-none">
+        <ol class="breadcrumbs">
+            <li class="breadcrumb-item">
+                <a href="/" class="breadcrumb-link">
+                    <span class="breadcrumb-icon" aria-hidden="true">🏠</span>
+                    <span class="breadcrumb-text">Home</span>
+                </a>
+            </li><li class="breadcrumb-item">
+                <a href="/experience" class="breadcrumb-link">
+                    <span class="breadcrumb-text">Experience</span>
+                </a>
+            </li><li class="breadcrumb-item active" aria-current="page">
+                <span class="breadcrumb-text">Experiencia</span>
+            </li></ol>
+    </nav>
+</section>
+
+
+    <main class="container">
+        
+<section
+  id="experience"
+  class="section section--border-bottom rad-animation-group flex-grow-1"
+>
+  <div id="main-content">
+    <div class="row flex-column-reverse flex-md-row rad-fade-down">
+      <div class="col-12 col-md-5 mt-5 mt-sm-0">
+        
+        
+        
+        
+           
+         
+        <div class="experience " >
+          <a href="/experience/job-3/">
+            
+            
+            
+              <div class="experience__header  no-company-logo">
+              
+              <div class="experience__meta">
+                <div class="experience__date">2024-now</div>
+                <div class="experience__title">CIO</div>
+                <div class="experience__company">Internet Affairs Inc. . <span class="experience__location">
+                  Stavanger, Norway</span></div>
+              </div>
+            </div>
+          </a>
+        </div>
+         
+        <div class="experience " >
+          <a href="/experience/job-3.es/">
+            
+            
+            
+              <div class="experience__header  no-company-logo">
+              
+              <div class="experience__meta">
+                <div class="experience__date">2024-now</div>
+                <div class="experience__title">Gerente General</div>
+                <div class="experience__company">Translated Content. <span class="experience__location">
+                  Stavanger, Norway</span></div>
+              </div>
+            </div>
+          </a>
+        </div>
+         
+        <div class="experience " >
+          <a href="/experience/job-3.fr/">
+            
+            
+            
+              <div class="experience__header  no-company-logo">
+              
+              <div class="experience__meta">
+                <div class="experience__date">2024-maintenant</div>
+                <div class="experience__title">PDG</div>
+                <div class="experience__company">Internet Affairs Inc.. <span class="experience__location">
+                  Stavanger, Norvège</span></div>
+              </div>
+            </div>
+          </a>
+        </div>
+         
+        <div class="experience " >
+          <a href="/experience/job-3.es-copy/">
+            
+            
+            
+              <div class="experience__header  no-company-logo">
+              
+              <div class="experience__meta">
+                <div class="experience__date">2024-ahora</div>
+                <div class="experience__title">Director Ejecutivo</div>
+                <div class="experience__company">Internet Affairs Inc.. <span class="experience__location">
+                  Stavanger, Noruega</span></div>
+              </div>
+            </div>
+          </a>
+        </div>
+         
+        <div class="experience " >
+          <a href="/experience/job-2/">
+            
+            
+            
+              <div class="experience__header  no-company-logo">
+              
+              <div class="experience__meta">
+                <div class="experience__date">2023-2024</div>
+                <div class="experience__title">Chief Intern</div>
+                <div class="experience__company">Internet Affairs Inc. . <span class="experience__location">
+                  Stavanger, Norway</span></div>
+              </div>
+            </div>
+          </a>
+        </div>
+         
+        <div class="experience " >
+          <a href="/experience/job-2.fr/">
+            
+            
+            
+              <div class="experience__header  no-company-logo">
+              
+              <div class="experience__meta">
+                <div class="experience__date">2023-2024</div>
+                <div class="experience__title">Stagiaire en Chef</div>
+                <div class="experience__company">Internet Affairs Inc.. <span class="experience__location">
+                  Stavanger, Norvège</span></div>
+              </div>
+            </div>
+          </a>
+        </div>
+         
+        <div class="experience " >
+          <a href="/experience/job-2.es/">
+            
+            
+            
+              <div class="experience__header  no-company-logo">
+              
+              <div class="experience__meta">
+                <div class="experience__date">2023-2024</div>
+                <div class="experience__title">Becario Jefe</div>
+                <div class="experience__company">Internet Affairs Inc.. <span class="experience__location">
+                  Stavanger, Noruega</span></div>
+              </div>
+            </div>
+          </a>
+        </div>
+         
+        <div class="experience " >
+          <a href="/experience/job-1/">
+            
+            
+            
+              <div class="experience__header  no-company-logo">
+              
+              <div class="experience__meta">
+                <div class="experience__date">2022-2024</div>
+                <div class="experience__title">Junior Intern</div>
+                <div class="experience__company">Internet Affairs Inc. . <span class="experience__location">
+                  Stavanger, Norway</span></div>
+              </div>
+            </div>
+          </a>
+        </div>
+         
+        <div class="experience " >
+          <a href="/experience/job-1.es/">
+            
+            
+            
+              <div class="experience__header  no-company-logo">
+              
+              <div class="experience__meta">
+                <div class="experience__date">2022-2024</div>
+                <div class="experience__title">Becario Junior</div>
+                <div class="experience__company">Internet Affairs Inc.. <span class="experience__location">
+                  Stavanger, Noruega</span></div>
+              </div>
+            </div>
+          </a>
+        </div>
+         
+        <div class="experience " >
+          <a href="/experience/_index.fr/">
+            
+            
+            
+              <div class="experience__header  no-company-logo">
+              
+              <div class="experience__meta">
+                <div class="experience__date"></div>
+                <div class="experience__title"></div>
+                <div class="experience__company">. <span class="experience__location">
+                  </span></div>
+              </div>
+            </div>
+          </a>
+        </div>
+         
+        <div class="experience  selected " >
+          <a href="/experience/_index.es/">
+            
+            
+            
+              <div class="experience__header  no-company-logo">
+              
+              <div class="experience__meta">
+                <div class="experience__date"></div>
+                <div class="experience__title"></div>
+                <div class="experience__company">. <span class="experience__location">
+                  </span></div>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+      </div>
+      <div class="col-12 col-md-7 mt-7 mt-sm-0">
+        
+        <div class="job-card mb-5">
+          
+          
+            <div class="no-company-logo d-flex align-items-center mb-3">
+            
+            <div>
+              <h2 class="h4 mb-1"></h2>
+              <div class="job-card__location text-muted"> • </div>
+              <div class="job-card__dates text-muted"></div>
+            </div>
+          </div>
+        </div>
+        
+        <h1>Experiencia</h1>
+        <p>Aquí es donde puedes destacar un poco sobre tu experiencia. Años de experiencia total, especialización, etc.</p>
+<p>El contenido en esta introducción viene del archivo <code>content/experience/_index.md</code>.
+Este tipo de contenido, las &ldquo;páginas índice&rdquo;, se denominan &ldquo;branch bundles&rdquo; (paquetes de rama). Puede leer más sobre <a href="https://gohugo.io/content-management/sections/#template-selection"><strong>secciones y paquetes</strong> en la documentación de Hugo</a>.</p>
+<p>El contenido para cada elemento de experiencia (en los que puedes hacer clic a la izquierda) se define en la carpeta <code>content/experience</code>, con un elemento de contenido por experiencia, como en <code>job-1.es.md</code>, <code>job-2.es.md</code>, etc.</p>
+<p>El contenido (texto y URL) para los botones a continuación (donde puedes agregar enlaces) proviene del archivo de traducción, <code>i18n/en.yaml</code>, en los elementos <code>experience_button</code>, <code>experience_button_url</code>, <code>experience_button2</code>, <code>experience_button2_url</code>, <code>experience_button3</code>, <code>experience_button3_url</code>.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <div class="d-print-none">
+        <footer class="footer w-100 d-print-none">
+
+
+    
+
+    
+      
+        
+              
+      
+
+  
+    
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+  
+
+
+<section  id="contacto" class="section section--contact pt-0">
+    <div class="container">
+        <div class="contact w-100">
+            <h2>Contáctame</h2>
+
+            <div class="row pt-2">
+                <div class="col-12 col-lg-7">
+                    <form action="https://formspree.io/f/mail@example.com" method="POST" class="contact__form">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="full_name" class="form-control" placeholder="Tu nombre">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" name="email" class="form-control" placeholder="Tu correo">
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <input type="tel" name="phone" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <textarea name="message" class="form-control" rows="2" placeholder="Tu mensaje"></textarea>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-5 contact__info">
+                    
+                    <h3>Mi teléfono</h3>
+                    <span><a href='tel:+555666777'>555 666 777</a></span>
+                    
+
+                    
+                    <h3>Mi correo</h3>
+                    <span>demo@demosite.com</span>
+                    
+                    
+                    
+                    <h3>Mi ubicación</h3>
+                    <span>🇩🇰 Denmark</span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section  id="newsletter" class="section section--cta">
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>
+           
+            Subscríbete 
+          
+        </h2>
+        <div class="rad-subscription-group">
+          <form
+            id="rad-subscription"
+            action="/"
+            method="POST"
+          >
+            <input
+              id="rad-subscription-email"
+              type="email"
+              class="form-control"
+              aria-describedby="emailHelp"
+              placeholder=' Tu correo '
+              aria-label=' Tu correo '
+            >
+            <button type="submit" id="rad-subscription-submit" class="btn btn-light btn-rounded">
+               
+                Subscríbete 
+              
+            </button>
+          </form>
+          <div id="rad-subscription-success" class="d-none">
+            <p class="lead">
+               
+                Gracias por suscribirte! 
+              
+            </p>
+          </div>
+          <div id="rad-subscription-fail" class="d-none">
+            <p>
+               
+                Algo ha fallado, por favor inténtalo de nuevo. 
+              
+            </p>
+          </div>
+          <script src='http://localhost:1313/js/subscription.js'></script>
+        </div>
+        <small id="emailHelp" class="form-text text-muted">
+           
+            Respetamos tu privacidad. 
+          
+        </small>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+<section  class="section section--border-bottom rad-animation-group section--padding">
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="row rad-fade-down">
+            <div class="col-12 text-center">
+                
+                <h2 class="section__title">Contenido extra</h2>
+                
+                
+                <div class="text-section__content">
+                    <p>Puedes añadir contenido adicional después de los bloques de <code>section</code>.</p>
+<p>Aquí puedes ser creativo, utilizar otros shortcodes, &hellip; O dejarlo vacío.</p>
+<p>Para añadir texto que quede bien en el pie, puedes utilizar el shortcode <code>text-section</code>.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+              
+      
+    
+
+  <div class="container items">
+    <div class="container">
+      <div class="row w-100 align-items-center">
+        <div class="footer_left col-12 col-lg-4 mb-3 mb-lg-0 text-center text-lg-start">
+          <div class="footer__copy">
+            <span>© Adritian. Free Hugo theme by Adrián Moreno Peña.</span>
+          </div>
+        </div>
+        <div class="footer_links col-12 col-lg-6 mb-3 mb-lg-0 text-center text-lg-start">
+          <ul class="navbar-nav w-100 align-items-center justify-content-center justify-content-lg-start d-flex flex-wrap gap-2">
+            
+          </ul>
+        </div>
+        <div class="footer_right col-12 col-lg-2 mb-3 mb-lg-0 text-center text-lg-end">
+          <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-2 d-grid col-12 ">
+            
+            
+            
+<div id='footer-color-selector'
+  class='d-grid gap-2 col-6 mx-auto nav-link dropdown dropup '>
+  <button class="btn btn-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center show bd-theme-selector"
+    id='bd-theme-footer' type="button" aria-expanded="true" data-bs-toggle="dropdown"
+    data-bs-display="static" aria-label='Toggle theme'>
+    <span class="theme-icon auto d-none" aria-hidden="true"></span>
+    <span class="current-theme">✨ Auto</span>
+    <span class="d-lg-none ms-2 visually-hidden bd-theme-text" id="bd-theme-text-footer">Toggle theme</span>
+  </button>
+  <ul id="theme-dropdown-footer" class="dropdown-menu dropdown-menu-end " aria-labelledby="bd-theme-text-footer" data-bs-popper="static">
+    <li>
+      <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light"
+        aria-pressed="true">
+        ☀️ Light
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+        aria-pressed="false">
+        🌑 Dark
+        <span class="theme-icon dark d-none" aria-hidden="true"></span>
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto"
+        aria-pressed="false">
+        ✨ Auto
+        <span class="theme-icon light d-none" aria-hidden="true"></span>
+      </button>
+    </li>
+  </ul>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    
+    
+<script>
+  window.addEventListener("load", function() {
+    if (typeof lozad !== 'undefined') {
+      try {
+        var observer = window.lozad(".lozad", {
+          rootMargin: window.innerHeight / 2 + "px 0px",
+          threshold: 0.01,
+          loaded: function(el) {
+            el.setAttribute('data-loaded', 'true');
+          }
+        });
+        observer.observe();
+      } catch(e) {
+        console.error('Lozad initialization error:', e);
+      }
+    }
+  });
+</script>
+
+
+<script defer src='http://localhost:1313/js/rad-animations.js'></script>
+<script defer src='http://localhost:1313/js/library/smooth-scroll.polyfills.min.js'></script>
+<script defer src='http://localhost:1313/js/sticky-header.js'></script>
+<script defer src='http://localhost:1313/js/smooth-scroll-init.js'></script>
+<script defer src="/assets/js/vendor/bootstrap.bundle.min.e4fd49181388c48ec5040bd3fe66f57c29c8e67fcd8502b3354b96ec7ab47cc7.js"></script>
+
+
+
+
+<script>
+  window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+</script>
+
+
+    
+    
+</body>
+</html>

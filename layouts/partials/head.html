@@ -1,0 +1,146 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+{{- $themeColor := .Site.Params.themeColor | default "#478079" -}}
+<meta name="theme-color" content="{{ $themeColor }}" />
+{{ partial "head-favicons.html" . }}
+
+{{- if .Site.Params.analytics.googleTagManager.enabled }}
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+{{- end }}
+{{- if .Site.Params.analytics.googleAnalytics.enabled }}
+  {{- if .Site.Params.analytics.googleAnalytics.code }}
+    <!-- Google tag (gtag.js) - moved to bottom for non-blocking -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ .Site.Params.analytics.googleAnalytics.code}}');
+    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.analytics.googleAnalytics.code }}"></script>
+  {{- end }}
+{{- end }}
+
+
+<title>
+  {{ if .IsHome }}
+  {{ else }}
+    {{ if .Title }}{{ .Title }} |{{ end }}
+  {{ end }}
+  {{ i18n "head_title" }}
+</title>
+
+<meta name="description" content="{{ i18n "head_description" }}" />
+<link rel="canonical" href="{{ .Permalink }}" />
+<meta name="generator-mode" content="{{ hugo.Environment }}" />
+{{- $critical := resources.Get "css/critical.css" | resources.Minify }}
+<style data-generator="critical-css">
+{{- $critical.Content | safeCSS }}
+</style>
+
+{{- $cssResources := slice }}
+{{- range .Site.Params.plugins.css }}
+  {{- if findRE "^http" .URL }}
+    <link rel="stylesheet" href="{{ .URL | absURL }}" />
+  {{- else }}
+    {{- with resources.Get .URL }}
+      {{- $cssResources = $cssResources | append . }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- if gt (len $cssResources) 0 }}
+  {{- $cssBundle := $cssResources | resources.Concat "css/bundle.css" }}
+  {{- $css := $cssBundle }}
+  {{- if hugo.IsProduction }}
+    {{- $css = $css | minify | fingerprint | resources.PostProcess }}
+  {{- end }}
+  <link
+    rel="preload"
+    href="{{ $css.RelPermalink }}"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+    {{ if hugo.IsProduction }}
+      integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous"
+    {{ end }} />
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="{{ $css.RelPermalink }}"
+      {{ if hugo.IsProduction }}
+        integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous"
+      {{ end }} />
+  </noscript>
+{{- end }}
+{{- range .Site.Params.plugins.scss }}
+  {{/* no external scss processing - as they need to be processed by the theme */}}
+  {{- $scss := resources.Get .URL }}
+  {{- $style := false }}
+  {{- if $scss }}
+    {{- $style = $scss | css.Sass }}
+  {{- else }}
+    {{- warnf "SCSS file not found: %s" .URL }}
+  {{- end }}
+  {{- if hugo.IsProduction }}
+    {{- $style = $scss | css.Sass | resources.Minify | resources.Fingerprint }}
+  {{- end }}
+  {{- if $style }}
+    <link
+      rel="stylesheet"
+      href="{{ $style.RelPermalink }}"
+      integrity="{{ $style.Data.Integrity }}"
+      crossorigin="anonymous" />
+  {{- end }}
+{{- end }}
+
+
+<!-- printed only it not disabled -->
+{{- if not .Site.Params.colorTheme.auto.disable }}
+  {{/* Inline script to prevent theme flash */}}
+  <script>
+    // Simple script to set initial theme to prevent flash
+    (function() {
+      const storedTheme = localStorage.getItem('theme');
+      if (storedTheme) {
+        if (storedTheme === 'auto') {
+          const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.setAttribute('data-bs-theme', isDark ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme-auto', 'true');
+        } else {
+          document.documentElement.setAttribute('data-bs-theme', storedTheme);
+        }
+      } else {
+        const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-bs-theme', isDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme-auto', 'true');
+      }
+    })();
+  </script>
+  {{- $colorModesScript := resources.Get "js/color-modes.js" }}
+  {{- if hugo.IsProduction }}
+    {{- $colorModesScript = $colorModesScript | resources.Minify | resources.Fingerprint }}
+  {{- end }}
+  <script defer src="{{ $colorModesScript.RelPermalink }}"></script>
+{{- else }}
+  <!-- disabled color theme selector -->
+{{- end }}
+
+{{- if .Site.Params.analytics.googleTagManager.enabled }}
+  <!-- Google Tag Manager (gtag.js) -->
+  <script
+    defer
+    src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.analytics.googleTagManager.code }}"></script>
+  {{- $analytics := resources.Get "js/gtag.js" | resources.Minify }}
+  <script defer src="{{ $analytics.RelPermalink }}"></script>
+{{- else }}
+  <!-- no google tag displayed -->
+{{- end }}
+<!-- Preload lozad for faster image loading -->
+<link rel="preload" href="{{ "js/library/lozad.min.js" | absURL }}" as="script">
+<script async src="{{ "js/library/lozad.min.js" | absURL }}"></script>
+
+{{ partial "opengraph.html" . }}
+{{ partial "twitter_cards.html" . }}
+{{ partial "seo/jsonld.html" . }}
